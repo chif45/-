@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;150;500&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #448D76;
+
+}
+
+
+
+header{
+    color:#FCBA12;
+    display:table;
+    height: 500px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 15%;
+}
+
+.topmenu table{
+    background-color: #F7EDD4;
+    margin-left: 5%;
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+}
+.topmenu td{
+    font-size: 150%;
+    border-right: 3px solid #093426;
+    font-family: 'Raleway';
+}
+
+
+header > #alg{
+    display: table-cell;
+    vertical-align:middle;
+    text-align: right;
+    padding-right: 50px;
+    font-size: 100px;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+header > #arr{
+    display: table-cell;
+    vertical-align:middle;
+    padding-top: 15%;
+    padding-left: 5%;
+    font-size: 50px;
+    font-family: 'Raleway';
+    font-weight: bold;
+    width: 300px;
+    animation-name: arr;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arr{
+
+    0%{
+        color: rgba(252, 186, 18, 0);
+    }
+    50%{
+        color: rgba(252, 186, 18, 1);
+    }
+    100%{
+        color: rgba(252, 186, 18, 0);
+    }
+
+}
+
+.shead {
+    border: #5F6368 solid 2px;
+    background-color: #F7EDD4;
+    border-radius: 20px;
+    box-shadow: 0 0 2px 1px #63686E;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 100px;
+    padding-bottom: 2%;
+}
+.shead > .title{
+    color:#AE0D7A;
+    font-size: 75px;
+    margin-top: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.shead > .dis{
+    color:#093426;
+    display: inline-block;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    width: 80%;
+}
+.shead > canvas{
+    width: 700px;
+    padding: 0;
+    margin: auto;
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+.buttons{
+    width: 700px;
+    margin: auto;
+    display: block;
+}
+
+.buttons > .Brand {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 5%;
+}
+.buttons > .Iter {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 30%;
+}
+.buttons > .Sort{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 2%;
+}
+
+
+.buttons > .Count {
+    height: 40px;
+    width: 60px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: #E8EAED;
+    font-size: 30px;
+}
+
+.buttons > input[type="button"] {
+	display: inline-block;	
+	box-sizing: border-box;
+	padding: 0 25px;
+	outline: none;
+	border: 1px solid #fff;
+	border-radius: 50px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #444;
+	background-color: #fff;
+	box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;  
+	vertical-align: top;
+	transition: box-shadow 0.2s;
+}
+.buttons > input[type="button"]:focus-visible {
+	border: 1px solid #4c51f9;
+	outline: none;
+}
+.buttons > input[type="button"]:hover {
+	transition: all 0.2s;
+	box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+}
+.buttons > input[type="button"]:active {
+	background-color: #808080;
+}
+.buttons > input[type="button"]:disabled {
+	background-color: #eee;
+	border-color: #eee;
+	color: #444;
+	cursor: not-allowed;
+}
